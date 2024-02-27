@@ -5,3 +5,10 @@
 1. Write your project proposal directly in this file in the section below. At a minimum, you should describe what a website you are going to work on and the 3 features that you plan to implement. See the project description on Brightspace for more details.
 1. <b>This part of the project is due Mon. Feb. 26 at 11:59pm.</b>
 ## Project Proposal
+### Website
+The website I've chosen for this project is the website we're redesigning for Outback Nursery in DGL 309. We haven't yet coded the website in HTML/CSS (we should be coding it soon) but I've designed the [homepage layout](https://xd.adobe.com/view/18869fa2-2cd0-4fcf-a29f-7e451ee4329a-4dd5/) in Adobe XD.
+
+### Javascript Interactions / Special Effects
+1. Add fade-ins and slide-ins to text and images
+2. Create a carousel for the testimonials' section
+3. Create an effect in banner sections (at top of website and just under hero section) so that text moves horizontally across screen in a continuous loop
