@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outback Nursery Demo Site</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Add WT Solaire Font-->
+    <style media="screen, print">
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Add Helvetica Neue Font */
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
+            font-weight: 300;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
+            font-weight: 100;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueRoman.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+  <!--Banner-->
+  <div class="c-banner">
+    <div class="c-banner__text c-banner__text--scrolling" id="scrollingText">
+        <p>Open every day from 9am - 5pm during our open season. Closed December, January and February. Come
+            visit
+            us, get inspired, and find your perfect plant. We love trees and plants just as much as you
+            do!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>Open every day from 9am - 5pm during our open season. Closed December, January and February. Come
+            visit
+            us, get inspired, and find your perfect plant. We love trees and plants just as much as you
+            do!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+</div>
+        <!--Navigation-->
+        <div class="c-nav--sticky u-bg-primary-60 full-width u-border-bottom-1">
+            <div class="c-nav">
+                <div class="l-flex l-flex-align-center">
+                    <img src="icons/tree-roots-lighter-green.svg" alt="tree icon" style="width: 40px">
+                    <a class="c-nav__home-link" href="index.html">Outback<br>Nursery</a>
+                </div>
+                <nav>
+                    <ul class="is-hidden--desktop is-hidden c-nav__mobile" id="nav-items">
+                        <li id="plants" class="c-nav__list-items c-nav__links">Plants</li>
+                        <ul class="c-nav__plants-item is-hidden" id="plant-items">
+                            <li class="c-nav__links"><a class="c-nav__links l-mb-05" href="coming-soon.html">Trees</a></li>
+                            <li class="c-nav__links"><a href="coming-soon.html">Shrubs</a></li>
+                            <li class="c-nav__links"><a href="coming-soon.html">Hedging</a></li>
+                            <li class="c-nav__links"><a href="coming-soon.html">Edibles</a></li>
+                            <li class="c-nav__links"><a href="coming-soon.html">Vines, Grasses &amp; Other Plants</a>
+                            </li>
+                        </ul>
+                        <li class="c-nav__list-items c-nav__links"><a href="coming-soon.html">Garden
+                                Supplies</a></li>
+                        <li class="c-nav__links c-nav__list-items"><a href="coming-soon.html">Services</a></li>
+                        <li class="c-nav__links c-nav__list-items"><a href="coming-soon.html">Plant Care</a>
+                        </li>
+                        <li class="c-nav__links c-nav__list-items"><a href="coming-soon.html">Gift Cards</a>
+                        </li>
+                        <li class="c-nav__links c-nav__list-items"><a href="coming-soon.html">About Us</a></li>
+                        <div class="c-nav__links c-nav__social-media">
+                            <a href="https://www.facebook.com/p/Outback-Nursery-Garden-Centre-100045470087619/" target="_blank"><img class="l-mr-1" src="icons/facebook-logo.png" alt="facebook logo" style="width: 25px"></a>
+                            <a href="https://www.instagram.com/outbacknursery/?hl=en" target="_blank">
+                            <img src="icons/instagram-logo.png" alt="instagram logo" style="width: 25px">
+                            </a>
+                        </div>
+                    </ul>
+                </nav>
+                <a id="hamburger" class="is-hidden--desktop"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <!--Hero-->
+        <div class="u-bg-primary-60 u-border-bottom-1">
+            <section class="c-hero wrapper-center-content">
+                <img class="c-hero__image" src="images/outback-nursery-grounds2.jpg" alt="outback nursery grounds">
+                <div class="wrapper-center-content">
+                    <h1 class="c-hero__title">We love plants and trees as much as you do.</h1>
+                    <div class="l-flex l-flex-column l-flex-align-center l-pb-2-5">
+                        <div
+                            class="l-flex l-flex-justify-between c-button c-button--primary l-mb-1-5 c-button--width-medium c-button--padding">
+                            <a href="#map">Get Inspired - Visit Us!</a>
+                            <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                        </div>
+                        <div
+                            class="l-flex l-flex-justify-between c-button c-button--width-medium l-mb-1-5 c-button--padding">
+                            <a href="#plants">Find Your Perfect Plant</a>
+                            <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Plants Section-->
+        <div class="u-border-bottom-1 u-bg-secondary-60">
+            <section id="plants-section" class="max-width">
+                <div class="c-plants__intro">
+                    <h2 class="c-section__title c-section__title--dark c-section__title--y-padding-4-2">Plants</h2>
+                    <p class="c-section__text text-wrapper">We are known for our extensive collection of trees: conifers, ornamentals, elegant Japanese maples and fruit trees for the edible landscape. Complementing our trees, we offer a versatile array of shrubs and hedging plants suitable for creating lush, living barriers and vibrant garden accents.</p>
+                    <p class="c-section__text text-wrapper">For the edible garden enthusiasts, we provide a range of plants from berries to fruit and nut trees. Additionally, our collection extends to include climbing vines, textured grasses, delicate ferns, and a diverse mix of other plants to complete any gardener's vision.</p>
+                    <div class="svg-container--top-right is-hidden--mobile">
+                    <img style="width: 25rem;" class="c_artichoke-graphic" src="icons/grey-artichoke-flower.svg"
+                        alt="grey artichoke flower">
+                    </div>
+                    <div class="svg-container--bottom-left is-hidden--mobile">
+                        <img style="width: 25rem;" class="c_artichoke-graphic" src="icons/grey-artichoke-flower.svg"
+                            alt="grey artichoke flower">
+                        </div>
+                </div>
+
+                <!--Accordion for Plant Categories-->
+                <!--Trees-->
+                <div class="c-accordion__button-container">
+                    <button class="u-border-top-1 c-accordion__button c-accordion__button--y-padding u-border-top-1"
+                        data-target="trees-panel">Trees</button>
+                    <button class="c-accordion__button c-accordion__button--y-padding"
+                        data-target="shrubs-panel">Shrubs</button>
+                    <button class="c-accordion__button c-accordion__button--y-padding"
+                        data-target="hedging-panel">Hedging</button>
+                    <button class="c-accordion__button c-accordion__button--y-padding" data-target="edible-panel">Edible
+                        Plants</button>
+                    <button class="c-accordion__button" data-target="vines-panel">Vines, Grasses and Other
+                        Plants</button>
+                </div>
+                <div id="trees-panel" class="c-accordion__panel">
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/coniferous-saplings.jpeg"
+                            alt="coniferous saplings">
+                        <h3 class="c-accordion__card-title">Conifers</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/lilac-tree.jpeg" alt="lilac tree">
+                        <h3 class="c-accordion__card-title">Ornamentals</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/acer-palmatum-kihachijo.jpeg"
+                            alt="japanese maple tree">
+                        <h3 class="c-accordion__card-title">Japanese Maples</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/peach-tree.jpeg" alt="fruit trees">
+                        <h3 class="c-accordion__card-title">Fruit Trees</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/nursery-full-trees.jpeg"
+                            alt="deciduous trees in nursery">
+                        <h3 class="c-accordion__card-title">Deciduous</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/bay-laurel-evergreen-tree.jpeg"
+                            alt="bay laurel evergreen tree">
+                        <h3 class="c-accordion__card-title">Evergreens</h3>
+                    </div>
+                </div>
+
+                <!--Shrubs-->
+                <div id="shrubs-panel" class="c-accordion__panel">
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/evergreen-shrubs.jpeg" alt="evergreen shrubs">
+                        <h3 class="c-accordion__card-title">Evergreen Shrubs</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/dogwood.jpeg" alt="deciduous shrubs">
+                        <h3 class="c-accordion__card-title">Deciduous Shrubs</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/pink-hydrangea.jpeg" alt="pink pink-hydrangea">
+                        <h3 class="c-accordion__card-title">Flowering Shrubs</h3>
+                    </div>
+                </div>
+
+                <!--Hedging-->
+                <div id="hedging-panel" class="c-accordion__panel">
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/conifers.jpeg" alt="evergreen hedging">
+                        <h3 class="c-accordion__card-title">Evergreen Hedging</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/broadleaf-hedging.jpeg"
+                            alt="broadleaf hedging">
+                        <h3 class="c-accordion__card-title">Broadleaf Evergreen Hedging</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/leylandii-fast-growing-hedging.jpeg"
+                            alt="Leylandii hedging">
+                        <h3 class="c-accordion__card-title">Fast-Growing Hedging Plants</h3>
+                    </div>
+                </div>
+
+                <!--Edibles-->
+                <div id="edible-panel" class="c-accordion__panel">
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/fruit-trees.jpeg" alt="apple tree">
+                        <h3 class="c-accordion__card-title">Fruit trees</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/hazelnut-tree.jpeg" alt="hazelnut tree">
+                        <h3 class="c-accordion__card-title">Nut Trees</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/raspberry-bush.jpeg" alt="raspberry bush">
+                        <h3 class="c-accordion__card-title">Berry plants</h3>
+                    </div>
+                </div>
+
+                <!--Vines, Grasses, and Other Plants-->
+                <div id="vines-panel" class="c-accordion__panel">
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/vines.jpeg" alt="vines">
+                        <h3 class="c-accordion__card-title">Vines</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/ornamental-grasses.jpg"
+                            alt="ornamental grasses">
+                        <h3 class="c-accordion__card-title">Grasses</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/ferns.jpeg" alt="ferns">
+                        <h3 class="c-accordion__card-title">Ferns</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/hostas.jpeg" alt="hostas">
+                        <h3 class="c-accordion__card-title">Hostas</h3>
+                    </div>
+                    <div class="c-accordion__card">
+                        <img class="c-accordion__card-image" src="images/perennials.jpeg" alt="perennials">
+                        <h3 class="c-accordion__card-title">Perennials</h3>
+                    </div>
+                </div>
+                <div class="l-flex l-flex-column l-flex-align-center l-py-2-5">
+                    <div
+                        class="l-flex l-flex-justify-between c-button c-button--primary l-mb-1-5 c-button--width-large c-button--padding">
+                        <a href="coming-soon.html">Talk to a green expert</a>
+                        <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                    </div>
+                    <div class="l-flex l-flex-justify-between c-button c-button--width-large c-button--padding">
+                        <a href="coming-soon.html">Explore contractor discounts</a>
+                        <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Garden Supplies, Services, & Plant Care Section-->
+        <div class="u-bg-primary-60 u-border-bottom-1">
+            <section class="width-85--mobile l-pb-3">
+                <h2 class="c-section__title c-section__title--dark c-section__title--y-padding-4">We offer more than just plants...</h2>
+                <div class="l-flex-container l-flex-container--space-between">
+                    <div class="c-card">
+                        <img src="icons/wheelbarrow.svg" style="height: 80px" alt="wheelbarrow icon">
+                        <h3 class="c-card__title l-pt-1"> Garden Supplies</h3>
+                        <p class="c-section__text l-pt-05">Bring your garden to life with our garden supplies:</p>
+                        <ol class="l-pt-05 l-pb-2 c-section__text u-fs-xx-small">
+                            <li class="c-card__list-item">mulch and soil</li>
+                            <li class="c-card__list-item">landscaping rocks</li>
+                            <li class="c-card__list-item">decorative pots</li>
+                            <li class="c-card__list-item">garden ornaments</li>
+                        </ol>
+                        <div
+                            class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-medium l-mb-1 c-button--padding">
+                            <a href="coming-soon.html">Garden Supplies</a>
+                            <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                        </div>
+                    </div>
+
+                    <div class="c-card">
+                        <img src="icons/planting.svg" style="height: 80px" alt="planting icon">
+                        <h3 class="c-card__title l-pt-1">Services</h3>
+                        <p class="c-section__text l-pt-05">Not only do we deliver but we also do plant installations so
+                            you
+                            don't have to!</p>
+                        <ol class="l-pt-05 l-pb-2 c-section__text u-fs-xx-small">
+                            <li class="c-card__list-item">delivery of plants and supplies</li>
+                            <li class="c-card__list-item">plant installation</li>
+                            <li class="c-card__list-item">contractor discounts</li>
+                        </ol>
+                        <div
+                            class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-medium l-mb-1 c-button--padding c-button--margin-top">
+                            <a href="coming-soon.html">Our Services</a>
+                            <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                        </div>
+                    </div>
+                    <div class="c-card">
+                        <img src="icons/water.svg" style="height: 80px" alt="watering plant icon">
+                        <h3 class="c-card__title l-pt-1">Plant Care</h3>
+                        <p class="c-section__text l-pt-05">Cultivate your green thumb and learn how to grow plants with
+                            our
+                            plant care resources:</p>
+                        <ol class="l-pt-05 l-pb-2 c-section__text u-fs-xx-small">
+                            <li class="c-card__list-item">planting tips for trees &amp; shrubs</li>
+                            <li class="c-card__list-item">plant spacing</li>
+                        </ol>
+                        <div
+                            class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-medium l-mb-1 c-button--padding c-button--margin-top">
+                            <a href="coming-soon.html">Plant Care Tips</a>
+                            <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Gift Cards Section-->
+        <div class="u-bg-secondary-60 u-border-bottom-1">
+            <section class="max-width l-grid l-grid-cols-2--desktop">
+                <img class="c-gift-card__image" src="images/genie-magnolia.jpeg" alt="flower">
+                <div>
+                    <div class="c-gift-card__title-icon width-90-right-align--desktop l-pt-3 l-pb-1-5">
+                        <h2 class="c-gift-card--title c-section__title c-section__title--dark u-text-center l-pr-1">Gift Cards</h2>
+                        <img class="l-pb-2" src="icons/gift-card.svg" alt="gift card icon" style="width: 60px">
+                    </div>
+                    <div class="width-85--mobile l-pb-2">
+                        <form class="c-form l-p-2" action="/submit-giftcard" method="post">
+                            <p class="c-section__text">Give the gift of greenery with one of our gift cards*</p>
+                            <label class="c-form__label" for="amount">Amount</label>
+                            <input class="c-form__input full-width" type="text" id="amount" name="amount" required>
+
+                            <label class="c-form__label" for="message">Personal Message</label>
+                            <textarea class="c-form__textarea full-width" id="message" name="message"></textarea>
+
+                            <fieldset class="c-form__fieldset">
+                                <legend class="c-form__legend">Your Information</legend>
+                                <label class="c-form__label" for="your-name">Name</label>
+                                <input class="c-form__input full-width" type="text" id="your-name" name="your-name"
+                                    required>
+
+                                <label class="c-form__label" for="your-email">Email</label>
+                                <input class="c-form__input full-width" type="email" id="your-email" name="your-email"
+                                    required>
+                            </fieldset>
+
+                            <fieldset class="c-form__fieldset">
+                                <legend class="c-form__legend">Recipient Information</legend>
+                                <label class="c-form__label" for="recipient-name">Name</label>
+                                <input class="c-form__input full-width" type="text" id="recipient-name"
+                                    name="recipient-name" required>
+
+                                <label class="c-form__label" for="recipient-email">Email</label>
+                                <input class="c-form__input full-width" type="email" id="recipient-email"
+                                    name="recipient-email" required>
+                            </fieldset>
+                            <div class="l-flex l-flex-justify-between l-mt-2">
+                                <div
+                                    class="c-button l-flex l-flex-justify-between c-button--width-regular c-button--padding">
+                                    <button class="u-tt-uppercase" type="reset">Reset</button>
+                                    <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                                </div>
+                                <div
+                                    class="c-button c-button--primary l-flex l-flex-justify-between c-button--width-regular c-button--padding">
+                                    <button class="u-tt-uppercase" type="submit">Submit</button>
+                                    <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                                </div>
+                            </div>
+                        </form>
+                        <p class="c-section__text c-section__text--small l-mt-2 width-90-right-align--desktop">
+                            *Send an e-transfer to info@botanica-nursery.ca with the Gift Card amount. We will send an
+                            electronic
+                            gift card to the recipient's email.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--About Us Section-->
+        <div class="u-bg-primary-60 u-border-bottom-1">
+            <section class="width-85--mobile l-pb-3">
+                <h2 class="width-48rem c-section__title c-section__title--dark c-section__title--y-padding-4 u-text-center">We are one of the
+                    largest
+                    family-owned nurseries on Vancouver Island</h2>
+                <div class="l-flex-container l-flex-container--space-between">
+                    <div>
+                        <img src="icons/community-icon.svg" style="height: 80px" alt="caring about community icon">
+                        <h3 class="c-card__title l-pt-05">Ethical</h3>
+                        <p class="c-section__text l-pt-05 l-mb-1-5 width-15rem">We care about our community, giving
+                            back, and making our
+                            clients happy.</p>
+                    </div>
+                    <div>
+                        <img src="icons/acreage.svg" style="height: 80px" alt="acreage icon">
+                        <h3 class="c-card__title l-pt-1">6 Acres</h3>
+                        <p class="c-section__text l-pt-05 l-mb-1-5 width-15rem">Our nursery is situated on a 6 acre
+                            property, just a 10
+                            minute drive from downtown Courtenay.</p>
+                    </div>
+                    <div>
+                        <img src="icons/greenhouse.svg" style="height: 80px" alt="greenhouse icon">
+                        <h3 class="c-card__title l-pt-1">5 Greenhouses</h3>
+                        <p class="c-section__text l-pt-05 l-mb-2-5 width-15rem">We have 5 greenhouses overflowing with
+                            plants. That’s
+                            almost 23, 000 square feet of just plants!</p>
+                    </div>
+                </div>
+                <div class="l-flex l-flex-column l-flex-align-center">
+                    <div
+                        class="l-flex l-flex-justify-between c-button l-flex-justify-center c-button--primary l-mb-1-5 c-button--width-medium c-button--padding">
+                        <a href="coming-soon.html">Read our story here</a>
+                        <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                    </div>
+                    <div
+                        class="l-flex l-flex-justify-between c-button l-mb-1-5 c-button--width-18 c-button--width-medium c-button--padding">
+                        <a href="coming-soon.html">Meet our talented team</a>
+                        <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Testimonials-->
+        <div class="c-testimonials u-bg-secondary-60 l-pb-2 u-border-bottom-1">
+            <section>
+                <h2 class="c-section__title c-section__title--dark c-section__title--y-padding-4 l-px-2-5 width-48rem u-text-center c-section__title--dark">From our
+                    garden to yours: what our
+                    customers
+                    are saying</h2>
+                <div id="carousel" class="c-carousel">
+                    <div class="c-carousel__items l-mx-2-5">
+                        <div class="c-carousel__item active">
+                            <img class="c-carousel__item-image" src="images/Don-Michael.jpg" alt="Customer profile of Don and Michael">
+                            <div class="c-carousel__item-text">
+                                <h3 class="l-p-1-5 c-carousel__item-title">Don and Michael</h3>
+                                <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">We've trusted Outback Nursery for eight years, drawn by its
+                                    unparalleled selection of Japanese maples and foundation trees. It's a
+                                    three-generation,
+                                    family-owned gem where passion for gardening is palpable. From walking through their
+                                    greenhouses to receiving tailored advice and healthy plants, Outback has become a
+                                    cornerstone of our garden's success. Plus, their fair prices are unbeatable.</p>
+                            </div>
+                        </div>
+                        <div class="c-carousel__item">
+                            <img class="c-carousel__item-image" src="images/richardManton.jpg" alt="Customer profile of Richard Manton">
+                            <div  class="c-carousel__item-text">
+                                <h3 class="l-p-1-5 c-carousel__item-title">Richard Manton</h3>
+                                <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">I own a small landscaping business and Outback Nursery is
+                                    my go
+                                    to for all my plant &amp; garden needs and they're incredibly helpful. I would
+                                    recommend
+                                    Outback to anyone!</p>
+                            </div>
+                        </div>
+                        <div class="c-carousel__item">
+                            <img class="c-carousel__item-image" src="images/EmmaPeterson.jpeg" alt="Customer profile of Emma Peterson">
+                            <div  class="c-carousel__item-text">
+                                <h3 class="l-p-1-5 c-carousel__item-title">Emma Peterson</h3>
+                                <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">Relocating to Ships Point introduced us to Outback Nursery,
+                                    and
+                                    it's been a game-changer. The family's depth of knowledge, combined with their
+                                    friendly
+                                    service and excellent pricing, has helped transform our acreage into a thriving
+                                    garden.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="c-carousel__item">
+                            <img class="c-carousel__item-image" src="images/IvyBlooms.jpeg" alt="Customer profile of Ivy Blooms Home & Garden Inc">
+                            <div  class="c-carousel__item-text">
+                                <h3 class="l-p-1-5 c-carousel__item-title">Ivy Blooms Home &amp; Garden Inc</h3>
+                                <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">Outback Nursery isn't just a place to buy plants; it's a
+                                    haven
+                                    for garden enthusiasts. With an outstanding variety of plants, passionate staff, and
+                                    excellent value, shopping here is a delightful experience. It's the perfect place to
+                                    nurture your gardening passion.</p>
+                            </div>
+                        </div>
+                        <div class="c-carousel__item">
+                            <img class="c-carousel__item-image" src="images/KarenLatiff.jpeg" alt="Customer profile of Karen Latiff">
+                            <div  class="c-carousel__item-text">
+                                <h3 class="l-p-1-5 c-carousel__item-title">Karen Latiff</h3>
+                                <p class="l-px-1-5 l-pb-1-5 c-carousel__item-para">Recommended by a friend, Outback Nursery exceeded our
+                                    expectations. Their vast selection, coupled with the team's readiness to assist,
+                                    made
+                                    our garden project enjoyable. Their support in planning a water feature shows they
+                                    go
+                                    above and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-carousel__pagination">
+                        <span class="c-carousel__dot active" onclick="currentSlide(0)"></span>
+                        <span class="c-carousel__dot" onclick="currentSlide(1)"></span>
+                        <span class="c-carousel__dot" onclick="currentSlide(2)"></span>
+                        <span class="c-carousel__dot" onclick="currentSlide(3)"></span>
+                        <span class="c-carousel__dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <a class="c-carousel__control prev" onclick="moveSlide(-1)">&#10094;</a>
+                    <a class="c-carousel__control next" onclick="moveSlide(1)">&#10095;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="c-footer u-bg-primary-60">
+    <div class="max-width l-pt-1">
+        <div class="l-flex-container l-flex-container--space-around">
+            <div class="l-flex c-footer__item">
+                <div>
+                    <div class="l-flex l-flex-align-center">
+                        <img src="icons/tree-roots-lighter-green.svg" alt="tree icon" style="width: 40px">
+                        <a class="c-nav__home-link" href="index.html">Outback<br>Nursery</a>
+                    </div>
+                    <p class="u-ff-serif u-fs-italic u-text-primary-200 u-line-height-1 l-py-05 l-pr-1 width-10rem">We love plants
+                        and
+                        trees as much as you do.</p>
+                    <h4 class="c-footer__subheadings l-pt-1">Contact</h4>
+                    <p class="c-footer__text">Tel. 250.703.0723</p>
+                    <p class="c-footer__text l-pb-1">Email: info@outbacknursery.ca</p>
+                    <img class="l-mr-1" src="icons/facebook-logo.png" alt="facebook logo" style="width: 30px">
+                    <img src="icons/instagram-logo.png" alt="instagram logo" style="width: 30px">
+                </div>
+                <div class="l-pl-1">
+                    <h4 class="c-footer__subheadings">Hours</h4>
+                    <p class="u-ff-serif u-fs-italic u-text-primary-200 l-pb-05 u-fs-medium u-letter-spacing-1">Open
+                        Season</p>
+                    <p class="u-text-primary-200 u-fs-small u-line-height-1 u-fw-medium">Spring, Summer and Fall</p>
+                    <p class="c-footer__text">Every day</p>
+                    <p class="c-footer__text">9am - 5pm</p>
+                    <p
+                        class="u-ff-serif u-fs-italic u-text-primary-200 l-pt-2 l-pb-05 u-fs-medium u-line-height-0 u-letter-spacing-1">
+                        Closed for the winter:</p>
+                    <p class="u-text-primary-200 u-fs-small u-line-height-1 u-fw-medium">December, January and February
+                    </p>
+                </div>
+            </div>
+        <div class="c-footer__item">
+            <div class="l-grid l-grid-cols-2--mobile">
+                <div class="width-60--mobile l-flex-column--mobile">
+                    <h4 class="c-footer__subheadings">Visit Us</h4>
+                    <p class="c-footer__text">6016 Headquarters Rd</p>
+                    <p class="c-footer__text">Courtenay, BC V9J 1M7</p>
+                    <div
+                    class="l-flex l-flex-justify-between c-button c-button--width-x-regular c-button--primary c-button--padding l-mt-2">
+                    <a href="https://maps.app.goo.gl/KgCsreMu8E3EGCVLA">Plan route</a>
+                    <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                </div>
+                </div>
+                <!--Google map-->
+                <iframe id="map" class="c-footer__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.806904334595!2d-125.05348338778744!3d49.75207693728265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dcfbd232dd%3A0x8790393154738312!2s6016%20Headquarters%20Rd%2C%20Courtenay%2C%20BC%20V9J%201M7!5e0!3m2!1sen!2sca!4v1711649277144!5m2!1sen!2sca"
+                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="c-footer__item">
+            <form class="c-form l-p-1" action="/submit-newsletter" method="post">
+                <h4 class="u-ff-serif u-fs-medium u-fs-italic u-text-primary-200 l-pb-1">Join our plant community today
+                </h4>
+                <div class="l-flex-between--mobile">
+                    <input class="l-pl-05 c-form__input width-60--mobile" placeholder="Enter your email address" type="email"
+                        id="email" name="email" required>
+                    <div
+                        class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-small l-p-05 l-mb-075">
+                        <button class="u-tt-uppercase" type="submit">Sign up</button>
+                        <img src="icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="c-footer__terms">
+        <div class="max-width l-px-05 l-pt-1 l-flex l-flex-justify-between">
+            <p class="c-section__text u-fs-x-small">© 2024 Outback Nursery</p>
+            <p class="c-section__text u-fs-x-small">Privacy Policy | Terms &amp; Conditions</p>
+        </div>
+    </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
