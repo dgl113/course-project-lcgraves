@@ -1,3 +1,9 @@
+/* 
+Author: Lara Graves
+Purpose: This file contains the JavaScript code for the website. It includes the following features: a scrolling banner effect, a navigation menu that appears when the hamburger icon is clicked, an accordion that opens and closes when the user clicks on a button, and a carousel that displays testimonials.
+Date Last Modified: 2024-04-08
+*/
+
 'use strict'
 
 // Navigation
