@@ -99,3 +99,6 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// Initially show the first slide
+showSlides(slideIndex);
+
