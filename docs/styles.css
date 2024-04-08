@@ -2060,14 +2060,6 @@ text-decoration: underline;
         padding-left: 0;
     }
 
-    /* Sticky navbar */
-    .c-nav--sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 5;
-    }
-
 
     .c-nav__mobile {
         display: flex;
