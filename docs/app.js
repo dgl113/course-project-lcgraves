@@ -104,3 +104,8 @@ showSlides(slideIndex);
 
 // Add automatic sliding
 var slideInterval = setInterval(function() { moveSlide(1); }, 3000); // Change image every 3 seconds
+
+// Stop automatic sliding on mouseover
+document.getElementById('carousel').addEventListener('mouseover', function() {
+    clearInterval(slideInterval);
+  });
