@@ -12,3 +12,8 @@ function showPlants() {
     var plantstuff = document.getElementById("plant-items");
     plantstuff.classList.toggle("show-plants");
 }
+
+// Banner text scrolling effect - 
+document.getElementById('scrollingText').addEventListener('click', function() {
+    this.classList.toggle('paused');
+  });

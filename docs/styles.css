@@ -1443,6 +1443,27 @@ body {
     white-space: nowrap;
 }
 
+.c-banner__text--scrolling {
+    animation: scroll-right 30s linear infinite;
+  }
+
+  /* CSS rule to pause animation */
+
+.paused {
+    animation-play-state: paused;
+  }
+  
+/* Keyframes for scrolling animation */
+  @keyframes scroll-right {
+    from {
+      transform: translateX(-90%);
+    }
+    to {
+      transform: translateX(5%);
+    }
+  }   
+
+
 /* NAVIGATION */
 
 .c-nav {
