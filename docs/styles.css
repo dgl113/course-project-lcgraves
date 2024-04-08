@@ -1835,6 +1835,11 @@ text-decoration: underline;
     font-family: car(--ff-serif);
     font-size: var(--fs-large);
   }
+
+  /* Display active item */
+  .c-carousel__items .active {
+    display: block;
+  }
   
   .c-carousel__control {
     cursor: pointer;
@@ -1879,6 +1884,12 @@ text-decoration: underline;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+  }
+
+  /* Add hover and active effect to carousel pagination */
+
+  .c-carousel__dot.active, .c-carousel__dot:hover {
+    background-color: var(--clr-secondary-200);
   }
   
 /* FOOTER */

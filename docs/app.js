@@ -69,3 +69,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
+
+var slideIndex = 0;
+var slides = document.getElementsByClassName("c-carousel__item");
+var paginationDots = document.getElementsByClassName("c-carousel__dot");
+
+function showSlides(n) {
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  
+  // Hide all slides and remove the active class from all dots
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+    paginationDots[i].classList.remove("active");
+  }
+  
+  // Display the current slide and highlight the active dot
+  slides[slideIndex].classList.add("active");
+  paginationDots[slideIndex].classList.add("active");
+}
+
+function moveSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
