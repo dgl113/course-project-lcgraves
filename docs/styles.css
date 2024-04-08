@@ -1694,7 +1694,7 @@ text-decoration: underline;
     font-style: var(--fs-italic);
     border-bottom: 1px solid var(--clr-secondary-100);
     padding-left: var(--rem-space-3);
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.1s linear;
     z-index: 2;
 }
 
