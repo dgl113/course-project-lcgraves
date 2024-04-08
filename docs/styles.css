@@ -1672,6 +1672,11 @@ text-decoration: underline;
     position: relative;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    background-color: var(--clr-soft-white);
+    padding-right: var(--rem-space-3);
+    padding-left: var(--rem-space-3);
+    z-index: 5;
 }
 
 .c-accordion__button {
@@ -1683,7 +1688,7 @@ text-decoration: underline;
     text-align: left;
     border: none;
     outline: none;
-    transition: background-color 0.2s ease-out;
+    transition: background-color 0.1s linear;
     font-family: var(--ff-serif);
     font-size: var(--fs-large);
     font-style: var(--fs-italic);
@@ -1696,8 +1701,6 @@ text-decoration: underline;
 .c-accordion__button:hover, .c-accordion__button.accordion-active {
     background-color: var(--clr-primary-80);
 }  
-
-
 
 .c-accordion__card-image {
     height: 15rem;
