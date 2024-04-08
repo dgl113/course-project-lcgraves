@@ -109,3 +109,8 @@ var slideInterval = setInterval(function() { moveSlide(1); }, 3000); // Change i
 document.getElementById('carousel').addEventListener('mouseover', function() {
     clearInterval(slideInterval);
   });
+
+  // Resume automatic sliding on mouseout
+document.getElementById('carousel').addEventListener('mouseout', function() {
+    slideInterval = setInterval(function() { moveSlide(1); }, 3000);
+  });
